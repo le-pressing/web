@@ -1,0 +1,55 @@
+.navbarItem {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 30px 0 0;
+  font-size: 0.75rem;
+
+  &:hover {
+    cursor: pointer;
+
+    .label.parent {
+      border-bottom: 1px solid #161912;
+    }
+  }
+
+  &.right {
+    padding: 0 0 0 30px;
+  }
+
+  .label {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    color: #161912;
+    transition: color 0.25s;
+
+    &.faded {
+      color: #747571;
+    }
+  }
+
+  .dropdown {
+    cursor: default;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100vw;
+    padding: 30px 60px 50px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    border-top: 1px solid #dfe0e1;
+    transition: opacity 0.2s ease-in-out 0.1s, visibility 0s 0.25s;
+    display: flex;
+    align-items: center;
+
+    &.visible {
+      transition: opacity 0.2s ease-in-out;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

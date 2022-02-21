@@ -1,0 +1,65 @@
+[
+  {
+    "label": "Account",
+    "items": [
+      {
+        "label": "Link",
+        "url": ""
+      },
+      {
+        "label": "Link",
+        "url": ""
+      },
+      {
+        "label": "Link",
+        "url": ""
+      },
+      {
+        "label": "Link",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "label": "Company",
+    "items": [
+      {
+        "label": "Link",
+        "url": ""
+      },
+      {
+        "label": "Link",
+        "url": ""
+      },
+      {
+        "label": "Link",
+        "url": ""
+      },
+      {
+        "label": "Link",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "label": "Connect",
+    "items": [
+      {
+        "label": "Link",
+        "url": ""
+      },
+      {
+        "label": "Link",
+        "url": ""
+      },
+      {
+        "label": "Link",
+        "url": ""
+      },
+      {
+        "label": "Link",
+        "url": ""
+      }
+    ]
+  }
+]

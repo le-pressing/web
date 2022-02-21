@@ -1,0 +1,42 @@
+[
+  {
+    "label": "Locations",
+    "items": [
+      {
+        "label": "843 2nd Ave",
+        "url": "",
+        "img": ""
+      }
+    ]
+  },
+  {
+    "label": "Pricing",
+    "items": [
+      {
+        "label": "Dry Cleaning",
+        "img": "/images/dry-cleaning.jpg",
+        "url": ""
+      },
+      {
+        "label": "Wash and Fold",
+        "img": "/images/laundry.jpg",
+        "url": ""
+      },
+      {
+        "label": "Tailoring",
+        "img": "/images/tailor.jpg",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "label": "About",
+    "items": [
+      {
+        "label": "Origin Story",
+        "img": "",
+        "url": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+.footerItem {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  color: #4c4c4b;
+  width: 180px;
+
+  .label {
+    margin: 0 0 15px 0;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    color: #808284;
+
+    a {
+      margin: 0 0 5px 0;
+      line-height: 1.2rem;
+    }
+  }
+}

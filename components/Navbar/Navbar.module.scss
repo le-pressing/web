@@ -1,0 +1,34 @@
+.navbar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: saturate(180%) blur(20px);
+  transition: background-color 0.2s ease-in-out 0.1s;
+
+  &:hover {
+    transition-delay: 0s;
+    background: #fff;
+  }
+
+  .section {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    padding: 0 3rem;
+  }
+
+  .mid {
+    justify-content: center;
+  }
+
+  .right {
+    justify-content: flex-end;
+  }
+}

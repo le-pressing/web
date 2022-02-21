@@ -1,0 +1,19 @@
+.hero {
+    width: 100vw;
+    height: 45vw;
+    position: relative;
+    display: flex;
+
+    .heroImageContainer {
+      position: absolute;
+      width: 100vw;
+      height: 45vw;
+    }
+
+    .heroText {
+      z-index: 1;
+      margin: auto;
+      font-size: 3rem;
+      color: #fff;
+    }
+  }
