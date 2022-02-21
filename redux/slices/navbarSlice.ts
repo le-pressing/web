@@ -8,8 +8,8 @@ const initialState: NavbarState = {
   focused: "",
 };
 
-export const NavbarSlice = createSlice({
-  name: "Navbar",
+export const navbarSlice = createSlice({
+  name: "navbar",
   initialState,
   reducers: {
     setFocused: (state, action: PayloadAction<string>) => {
@@ -19,6 +19,6 @@ export const NavbarSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { setFocused } = NavbarSlice.actions;
+export const { setFocused } = navbarSlice.actions;
 
-export default NavbarSlice.reducer;
+export default navbarSlice.reducer;
