@@ -1,15 +1,15 @@
 import Image from "next/image";
-import styles from "./DropdownItem.module.scss";
+import styles from "./NavbarDropdown.module.scss";
 
-export interface DropdownItemType {
+export interface NavbarDropdownType {
   label: string;
   img: string;
   url: string;
 }
 
-export default function DropdownItem({ label, img, url }: DropdownItemType) {
+export default function NavbarDropdown({ label, img, url }: NavbarDropdownType) {
   return (
-    <a className={styles.dropdownItem} href={url}>
+    <a className={styles.dropdown} href={url}>
       {img && <Image src={img} objectFit="none" width={248} height={155} alt={label} />}
       <span className={styles.label}>{label}</span>
     </a>

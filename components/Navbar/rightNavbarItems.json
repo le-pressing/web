@@ -1,8 +1,10 @@
 [
   {
+    "modal": 1,
     "label": "Log In"
   },
   {
+    "modal": 2,
     "label": "Sign Up"
   }
 ]

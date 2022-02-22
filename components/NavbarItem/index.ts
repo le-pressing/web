@@ -1,5 +1,3 @@
-import NavbarItem, { NavbarItemType } from "./NavbarItem";
-
-export type { NavbarItemType };
+import NavbarItem from "./NavbarItem";
 
 export default NavbarItem;

@@ -2,10 +2,12 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 export interface NavbarState {
   focused: string;
+  modalView: number;
 }
 
 const initialState: NavbarState = {
   focused: "",
+  modalView: 0,
 };
 
 export const navbarSlice = createSlice({
@@ -15,10 +17,13 @@ export const navbarSlice = createSlice({
     setFocused: (state, action: PayloadAction<string>) => {
       state.focused = action.payload;
     },
+    setModal: (state, action: PayloadAction<number>) => {
+      state.modalView = action.payload;
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { setFocused } = navbarSlice.actions;
+export const { setFocused, setModal } = navbarSlice.actions;
 
 export default navbarSlice.reducer;

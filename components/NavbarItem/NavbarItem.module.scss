@@ -7,8 +7,10 @@
 
   &:hover {
     cursor: pointer;
+  }
 
-    .label.parent {
+  &.parent {
+    &:hover.label {
       border-bottom: 1px solid #161912;
     }
   }
@@ -27,29 +29,6 @@
 
     &.faded {
       color: #747571;
-    }
-  }
-
-  .dropdown {
-    cursor: default;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    width: 100vw;
-    padding: 30px 60px 50px;
-    top: 100%;
-    left: 0;
-    z-index: 1;
-    background: #fff;
-    border-top: 1px solid #dfe0e1;
-    transition: opacity 0.2s ease-in-out 0.1s, visibility 0s 0.25s;
-    display: flex;
-    align-items: center;
-
-    &.visible {
-      transition: opacity 0.2s ease-in-out;
-      opacity: 1;
-      visibility: visible;
     }
   }
 }

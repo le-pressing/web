@@ -14,11 +14,13 @@ export default function FooterItem({ label, items }: FooterItemProps) {
   return (
     <div className={styles.footerItem}>
       <div className={styles.label}>{label}</div>
-      <div className={styles.items}>
+      <ul className={styles.items}>
         {items.map(({ label }) => (
-          <a key={label}>{label}</a>
+          <li key={label}>
+            <a href="">{label}</a>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }
