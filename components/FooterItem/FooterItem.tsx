@@ -13,8 +13,8 @@ interface FooterItemProps {
 export default function FooterItem({ label, items }: FooterItemProps) {
   return (
     <div className={styles.footerItem}>
-      <div className={styles.label}>{label}</div>
-      <ul className={styles.items}>
+      <span>{label}</span>
+      <ul>
         {items.map(({ label }) => (
           <li key={label}>
             <a href="">{label}</a>

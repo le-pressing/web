@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .hero {
     width: 100vw;
     height: 45vw;
@@ -10,10 +12,11 @@
       height: 45vw;
     }
 
-    .heroText {
+    h1 {
       z-index: 1;
       margin: auto;
-      font-size: 3rem;
-      color: #fff;
+      font-size: 4rem;
+      font-weight: 400;
+      color: $white;
     }
   }

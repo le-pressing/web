@@ -23,9 +23,26 @@ export default function NavbarItemRight({ label, modal }: NavbarItemRightType) {
   const visible = modalView !== 0;
   const Login = (
     <div className={styles.modalBody}>
-      <div className={styles.form}>
-        <span className={styles.header}>Good to see you again.</span>
-        <span className={styles.please}>Please log in to your account.</span>
+      <div className={styles.content}>
+        <div className={styles.header}>
+          <h3>Good to see you again.</h3>
+          <p>Please log in to your account.</p>
+        </div>
+        <div className={styles.form}>
+          <input />
+          <input />
+          <button>Log In</button>
+        </div>
+        <div className={styles.oauth}>
+          <p>Or continue with</p>
+          <button>Google</button>
+          <button>Facebook</button>
+        </div>
+        <div className={styles.options}>
+          Don&apos;t have an account?{' '}
+          <a href="">Sign up</a>{' '}|{' '}
+          <a href="">Reset password</a>
+        </div>
       </div>
       <div className={styles.img}>
         <Image
@@ -40,8 +57,10 @@ export default function NavbarItemRight({ label, modal }: NavbarItemRightType) {
   );
   const SignUp = "SignUp";
 
+  const extraClasses = ["right"];
+
   return (
-    <NavbarItem label={label} extraClasses="right" onClick={open}>
+    <NavbarItem label={label} extraClasses={extraClasses} onClick={open}>
       {visible && (
         <Modal close={close}>{modalView === 1 ? Login : SignUp}</Modal>
       )}

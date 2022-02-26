@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .dropdown {
   cursor: default;
   opacity: 0;
@@ -8,11 +10,9 @@
   top: 100%;
   left: 0;
   z-index: 1;
-  background: #fff;
-  border-top: 1px solid #dfe0e1;
+  background: $white;
+  border-top: 1px solid $light;
   transition: opacity 0.2s ease-in-out 0.1s, visibility 0s 0.25s;
-  display: flex;
-  align-items: center;
 
   &.visible {
     transition: opacity 0.2s ease-in-out;

@@ -14,7 +14,7 @@ export default function Hero() {
           alt="le pressing"
         />
       </div>
-      <h1 className={styles.heroText}>Dry Cleaning</h1>
+      <h1>Dry Cleaning</h1>
     </section>
   );
 }

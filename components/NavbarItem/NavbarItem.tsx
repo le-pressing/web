@@ -9,7 +9,7 @@ interface NavbarItemProps {
   label: string;
   children: React.ReactNode;
   onClick?: () => void;
-  extraClasses?: string;
+  extraClasses?: string[];
 }
 
 export default function NavbarItem({
@@ -29,7 +29,8 @@ export default function NavbarItem({
   const labelClass = `${styles.label} ${faded}`;
 
   const handleClick = onClick || function () {};
-  const itemClass = `${styles.navbarItem} ${extraClasses}`;
+  const extras = extraClasses?.map((cls) => styles[cls]).join(" ");
+  const itemClass = `${styles.navbarItem} ${extras}`;
 
   return (
     <div className={itemClass} onMouseEnter={focus} onMouseLeave={unfocus}>

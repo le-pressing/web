@@ -16,9 +16,10 @@ export default function NavbarItemLeft({ label, items }: NavbarItemLeftType) {
 
   const visible = focused === label ? styles.visible : "";
   const itemClass = `${styles.dropdown} ${visible}`;
+  const extraClasses = [items ? "parent" : ""];
 
   return (
-    <NavbarItem label={label} extraClasses={items ? "parent" : ""}>
+    <NavbarItem label={label} extraClasses={extraClasses}>
       {items && (
         <div className={itemClass}>
           {items.map(({ label, img, url }: NavbarDropdownType) => (

@@ -1,22 +1,56 @@
+@import "../../styles/variables";
+
 .modalBody {
   width: 100%;
   height: 100%;
   display: flex;
 
-  .form {
+  .content {
     width: 440px;
-    display: flex;
-    flex-direction: column;
-    color: #4c4c4b;
+    padding: 40px 40px 0 40px;
+    color: $platinum;
     font-weight: normal;
-    align-items: center;
+    font-size: 0.9rem;
 
     .header {
-      font-size: 1.5rem;
+      text-align: center;
+
+      h3 {
+        font-weight: 500;
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
     }
 
-    .please {
-      font-size: 0.8rem;
+    .form {
+      width: 100%;
+
+      input, button {
+        display: block;
+        width: 100%;
+      }
+
+      input {
+        height: 50px;
+        background-color: $cream;
+        color: $black;
+        border: none;
+        padding-left: 15px;
+        outline: none;
+        margin-bottom: 15px;
+      }
+
+      button {
+        border: none;
+        height: 55px;
+        border-radius: 5px;
+        padding: 15px;
+        background-color: $platinum;
+        color: $white;
+      }
     }
   }
 
