@@ -10,6 +10,7 @@
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: saturate(180%) blur(20px);
   transition: background-color 0.2s ease-in-out 0.1s;
+  font-weight: 300;
 
   &:hover {
     transition-delay: 0s;

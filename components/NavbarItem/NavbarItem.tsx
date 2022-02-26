@@ -29,13 +29,10 @@ export default function NavbarItem({
   const labelClass = `${styles.label} ${faded}`;
 
   const handleClick = onClick || function () {};
+  const itemClass = `${styles.navbarItem} ${extraClasses}`;
 
   return (
-    <div
-      className={`${styles.navbarItem} ${extraClasses}`}
-      onMouseEnter={focus}
-      onMouseLeave={unfocus}
-    >
+    <div className={itemClass} onMouseEnter={focus} onMouseLeave={unfocus}>
       <span className={labelClass} onClick={handleClick}>
         {label}
       </span>

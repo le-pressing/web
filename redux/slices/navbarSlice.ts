@@ -19,11 +19,11 @@ export const navbarSlice = createSlice({
     },
     setModal: (state, action: PayloadAction<number>) => {
       state.modalView = action.payload;
+      state.focused = "";
     },
   },
 });
 
-// Action creators are generated for each case reducer function
 export const { setFocused, setModal } = navbarSlice.actions;
 
 export default navbarSlice.reducer;

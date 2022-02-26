@@ -1,0 +1,27 @@
+.modalBody {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  .form {
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    color: #4c4c4b;
+    font-weight: normal;
+    align-items: center;
+
+    .header {
+      font-size: 1.5rem;
+    }
+
+    .please {
+      font-size: 0.8rem;
+    }
+  }
+
+  .img {
+    width: 360px;
+    height: 400px;
+  }
+}

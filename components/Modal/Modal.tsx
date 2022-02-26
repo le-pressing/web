@@ -1,27 +1,22 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-import Image from "next/image";
+// import Image from "next/image";
 
 import styles from "./Modal.module.scss";
 
 interface ModalProps {
-  show: boolean;
-  onClose: () => {};
+  close: () => void;
   children: React.ReactNode;
 }
 
-export default function Modal({ show, onClose, children }: ModalProps) {
+export default function Modal({ close, children }: ModalProps) {
   const [isBrowser, setIsBrowser] = useState(false);
 
   useEffect(() => {
     setIsBrowser(true);
   }, []);
 
-  const close = (e: React.MouseEvent<HTMLSpanElement>) => {
-    onClose();
-  };
-
-  const modalContent = show ? (
+  const modalContent = (
     <div className={styles.modalOverlay}>
       <div className={styles.modal}>
         <span className={styles.close} onClick={close}>
@@ -30,7 +25,7 @@ export default function Modal({ show, onClose, children }: ModalProps) {
         {children}
       </div>
     </div>
-  ) : null;
+  );
 
   if (isBrowser) {
     return ReactDOM.createPortal(

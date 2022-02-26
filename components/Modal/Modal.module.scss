@@ -10,14 +10,18 @@
   background-color: rgba(0, 0, 0, 0.5);
 
   .modal {
-    background: green;
-    width: 500px;
+    background: #fff;
+    width: 800px;
     height: 600px;
-    border-radius: 15px;
-    padding: 15px;
+    position: relative;
+    z-index: 1;
 
     .close {
-      display: flex;
+      position: absolute;
+      right: 0;
+      z-index: 2;
+      color: white;
+      cursor: pointer;
     }
   }
 }

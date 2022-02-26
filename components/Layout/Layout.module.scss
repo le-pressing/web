@@ -1,4 +1,10 @@
-.main {
-  margin: 0;
-  padding-top: 60px;
+.layout {
+  &.under {
+    pointer-events: none;
+  }
+
+  .main {
+    margin: 0;
+    padding-top: 60px;
+  }
 }
