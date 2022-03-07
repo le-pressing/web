@@ -29,18 +29,35 @@ export default function NavbarItemRight({ label, modal }: NavbarItemRightType) {
           <p>Please log in to your account.</p>
         </div>
         <div className={styles.form}>
-          <input />
-          <input />
+          <input placeholder="Email address" />
+          <input placeholder="Password" />
           <button>Log In</button>
         </div>
         <div className={styles.oauth}>
           <p>Or continue with</p>
-          <button>Google</button>
-          <button>Facebook</button>
+          <div>
+            <button>
+              <Image
+                alt="google"
+                src="/icons/google.png"
+                width={18}
+                height={18}
+              />
+              <span>Google</span>
+            </button>
+            <button>
+              <Image
+                alt="facebook"
+                src="/icons/facebook.png"
+                width={18}
+                height={18}
+              />
+              <span>Facebook</span>
+            </button>
+          </div>
         </div>
         <div className={styles.options}>
-          Don&apos;t have an account?{' '}
-          <a href="">Sign up</a>{' '}|{' '}
+          Don&apos;t have an account? <a href="">Sign up</a> |{" "}
           <a href="">Reset password</a>
         </div>
       </div>
