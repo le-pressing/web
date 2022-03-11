@@ -15,8 +15,8 @@ export default function FooterItem({ label, items }: FooterItemProps) {
     <div className={styles.footerItem}>
       <span>{label}</span>
       <ul>
-        {items.map(({ label }) => (
-          <li key={label}>
+        {items.map(({ label }, i) => (
+          <li key={label + i}>
             <a href="">{label}</a>
           </li>
         ))}
